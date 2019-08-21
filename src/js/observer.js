@@ -1,5 +1,4 @@
-const sectionObserver
-class section {
+const section = {
     constructor($target, callback, settings) {
       this._$target = $target;
       this._callback = callback;
@@ -9,10 +8,10 @@ class section {
           
           return;
       }
-    }
+    },
     sectionObserver() {
         const observer = new IntersectionObserver(this._callback, this._settings);
-    }
+    },
     init($target) {
         sectionObserver.observe($target);
     }
